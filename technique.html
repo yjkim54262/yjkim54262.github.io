@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stackOverflow.css">
+
+    <title>Technique Details</title>
+</head>
+<body>
+    <div class="body-area">
+        <h3>Technique Details</h3>
+        <div class="paragraph">
+            <!-- <figure id="figHowfast">
+                <img id="imgHowfast" src="img/howfast.PNG" alt="howfast">
+                <figcaption class="figure">Figure 1: Stack overflow website loading time analysis</figcaption>
+            </figure> -->
+            <p>
+                I used various online tools to find out what server-side and client-side technologies were used to create Stack overflow. 
+                These tools included Netcraft.com’s site report generator which can be found at http://toolbar.netcraft.com/site_report and Builtwith.com’s report generator 
+                which can be found at http://builtwith.com/.
+            </p>
+        </div>
+
+        <h3>Technologies</h3>
+        <div class="paragraph">
+            <figure id="figServerSide">
+                <img id="imgServerSide" src="img/serverside.PNG" alt="serverside">
+                <figcaption class="figure">Figure 1: NetCraft report on Stackoverflow.com</figcaption>
+            </figure>
+            <p>
+                Two main server side technologies were indicated by the NetCraft analyses report:
+                Extensible markup language (XML) is used by Stack overflow for the storage and transfer of data within and between servers.
+                Secure Sockets Layer (SSL) is used by Stack overflow to ensure data security for its databses which house user-uploaded data.
+            </p>
+
+            <p>
+                stackoverflow.com uses Javascript and the Javascript JQuery library to provide client side functionality. 
+                The website also utilises AJAX queries to update content on the page from the server without needing to reload the whole page. 
+                Using AJAX was a good design choice for stackoverflow.com as it means the client browser doesn't have to wait for all the data to be loaded 
+                from the server to be able to interact with the page. (McClure W, et al, 2007) This makes using the website quicker and smoother.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
